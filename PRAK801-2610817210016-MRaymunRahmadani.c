@@ -9,8 +9,8 @@ int main() {
     printf("Alamat variabel = %p\n", p);
     printf("Nilai melalui pointer = %d\n", *p);
 
-    *p = n * 2;
-    printf("Nilai setelah diubah lewat pointer = %d", n);
+    *p = *p * 2;
+    printf("Nilai setelah diubah lewat pointer = %d\n", n);
 
     return 0;
 

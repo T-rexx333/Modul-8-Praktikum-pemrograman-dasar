@@ -5,7 +5,7 @@ struct Wallet {
     int balance;
 };
 
-int topup(struct Wallet *d, int amount) {
+void topup(struct Wallet *d, int amount) {
     d->balance += amount; 
     return 1;
 }
@@ -55,7 +55,7 @@ int main() {
             printf("Bayar %d gagal, saldo tidak cukup\n", amount[i]);
         }
     }
-    printf("Saldo akhir %s = %d", m.name, m.balance);
+    printf("Saldo akhir %s = %d\n", m.name, m.balance);
 
     return 0;
 }

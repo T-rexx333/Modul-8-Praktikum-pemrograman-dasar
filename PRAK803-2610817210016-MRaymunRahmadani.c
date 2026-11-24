@@ -11,6 +11,7 @@ int main() {
     struct Participant m;
 
     printf("Nama : ");
+    m.name[strcspn(m.name, "\n")] = '\0';
     fgets(m.name, sizeof(m.name), stdin);
 
     printf("Umur : ");
@@ -22,7 +23,7 @@ int main() {
     printf ("Data Peserta:\n");
     printf("Nama : %s", m.name);
     printf("Umur : %d tahun\n", m.age);
-    printf("Skor : %d", m.score);
+    printf("Skor : %d\n", m.score);
 
     return 0;
 }

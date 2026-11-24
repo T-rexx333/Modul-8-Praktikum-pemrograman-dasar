@@ -14,7 +14,7 @@ int main() {
     printf ("Sebelum ditukar: Andi = %d, Budi = %d\n", chair1, chair2);
     
     swap(&chair1, &chair2);
-    printf("Sesudah ditukar: Andi = %d, Budi = %d", chair1, chair2);
+    printf("Sesudah ditukar: Andi = %d, Budi = %d\n", chair1, chair2);
 
     return 0;
 }
